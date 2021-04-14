@@ -493,7 +493,26 @@ class Character extends FlxSprite
 				addOffset("singRIGHT-alt", -1, -24);
 				addOffset("singLEFT-alt", -30, 15);
 				addOffset("singDOWN-alt", -30, -27);
-
+				
+				
+			case 'Jaden':
+				frames = Paths.getSparrowAtlas('jaden_assets');
+				animation.addByPrefix('idle', 'jaden Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up Note jaden', 24, false);
+				animation.addByPrefix('singDOWN', 'Down Note jaden', 24, false);
+				animation.addByPrefix('singLEFT', 'Left Note jaden', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right Note jaden', 24, false);
+				
+				addOffset('idle');
+				addOffset("singUP", -47, 24);
+				addOffset("singRIGHT", -1, -23);
+				addOffset("singLEFT", -30, 16);
+				addOffset("singDOWN", -31, -29);
+				addOffset("singUP-alt", -47, 24);
+				addOffset("singRIGHT-alt", -1, -24);
+				addOffset("singLEFT-alt", -30, 15);
+				addOffset("singDOWN-alt", -30, -27);
+				
 				playAnim('idle');
 		}
 
